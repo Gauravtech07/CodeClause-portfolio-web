@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio web</title>
+    <link rel ="stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/a657d4d805.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+</head>
+<body>
+    <div id = "header">
+        <div class="container">
+            <nav>
+                <img src ="img/gj.png" class="logo">
+                <ul id ="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul> 
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p >Hi, my name is</p>
+                <h1> Gaurav Jaiswal<br> And I'm a <span class="text"></span></h1>
+            </div>
+        </div>
+    </div>
+
+<!---------------------------------------------------------------- about page------------------------------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src ="img/gaurav1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> My Name is Gaurav Jaiswal. And I am pursuing BTech With CSE Stream From SGT University.
+                        A hard-worker, quick learner having soft skills too with technical ones. I am very dedicated person. 
+                        I completed the lots of certification courses. such as:- python for data science, java , C++</p>
+
+                          <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                          </div>
+                          <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Building websites</li>
+                                <li><span>App Development</span><br>Building Android/ios app</li>
+                            </ul>
+                          </div>
+                          <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021-2022</span><br>Designing Web/App interfaces</li>
+                                <li><span>2022-2023</span><br>Building websites</li>
+                                <li><span>2023</span><br>Building Android/ios app</li>
+                            </ul>
+                          </div>
+                          <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021-2025</span><br>Bachlor of Technology Cse</li>
+                                <li><span>2018-2020</span><br>Intermediate-12th</li>
+                                <li><span>2016-2018</span><br>Highschool-10th</li>
+                            </ul>
+                          </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ <!----------------------------------------------------------Services-----------------------------------------------------------------> 
+
+<div id="services">
+    <div class ="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-sharp fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur
+                     corporis veniam ea quos consequatur.  </p>
+                     <a href ="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur
+                     corporis veniam ea quos consequatur.  </p>
+                     <a href ="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur
+                     corporis veniam ea quos consequatur.  </p>
+                     <a href ="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-----------------------------------------------------------------Project------------------------------------------------------------>
+
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title"> My Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src ="img/project-1.jpg">
+                <div class="layer">
+                    <h3>Junble World Game</h3>
+                    <p>This is a jumble solver game  easy Unscramble jimble word.</p>
+                    <a href ="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src ="img/project-2.jpg">
+                <div class="layer">
+                    <h3>Banking management System</h3>
+                    <p>The App is to manage the banking customer account.  
+                    </p>
+                    <a href ="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src ="img/project-3.jpg">
+                <div class="layer">
+                    <h3>Hotel management App</h3>
+                    <p>The App is manage the hotel, here owner can be easily manage the customer details. 
+                    </p>
+                    <a href ="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+
+
+<!-----------------------------------------------------Conntact section---------------------------------------------------------->
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>gauravjais127@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9696036690</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100012335311680"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/invites/contact/?i=awgkycgk8rro&utm_content=f2i0kci"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/gaurav-jaiswal-102b11228?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BfQcatDxzTEaD6WKzCW%2FS5w%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                   
+                </div>
+                <a href="img/Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type ="text" name="Name" placeholder="Your Name" required>
+                    <input type ="email" name="Email" placeholder="Your Email" required>  
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea> 
+                    <button type="submit" class="btn btn2">Send Message</button>                
+                </form>
+
+                <span id ="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Created by <i class="fa-solid fa-heart"></i> Gaurav Jaiswal</p>
+    </div>
+
+</div>
+<script src="script.js"> </script>
+</body>
+</html>
